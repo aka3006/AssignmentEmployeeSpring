@@ -14,7 +14,7 @@ public class EmployeeController {
 	@Autowired
 	private EmployeeService employeeService;
 
-	@RequestMapping(method = RequestMethod.GET, value = "/employee")
+	@PostConstruct
 	public void readFromCsv() {
 		employeeService.readFromCsv();
 	}
