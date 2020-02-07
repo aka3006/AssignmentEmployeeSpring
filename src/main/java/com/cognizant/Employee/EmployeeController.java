@@ -24,7 +24,7 @@ public class EmployeeController {
 		return employeeService.getAllEmployee();
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/employee/{firstName}")
+	@RequestMapping(method = RequestMethod.GET, value = "/employee/firstname/{firstName}")
 	public List<Employee> getEmployeeByFirstName(@PathVariable String firstName) {
 		return employeeService.getEmployeeByFirstName(firstName);
 	}
